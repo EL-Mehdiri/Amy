@@ -5238,6 +5238,14 @@ input[type="range"]:active::-webkit-slider-thumb {
     margin-top: 2.5rem;
   }
 
+  .lg\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .lg\:mt-20 {
+    margin-top: 5rem;
+  }
+
   .lg\:flex {
     display: flex;
   }
