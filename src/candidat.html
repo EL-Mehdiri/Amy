@@ -1,0 +1,755 @@
+<!doctype html>
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="../src/input.css">
+    <title>candidat</title>
+</head>
+
+<body>
+    <header class="bg-white">
+        <nav class="flex justify-between items-center px-16 py-6 ">
+            <img src="./img/Logo.png" alt="logo" class="w-[160px]">
+            <ul class="flex justify-between gap-10">
+                <li><a href="#" class=" font-bold text-[14px] leading-6 uppercase">Accueil</a></li>
+                <li><a href="#" class=" font-bold text-[14px]  leading-6 uppercase">À propos</a></li>
+                <li><a href="#" class=" font-bold text-[14px]  leading-6 uppercase">Vous êtes Employeur</a></li>
+                <li><a href="#" class=" font-bold text-[14px]  leading-6 uppercase">Vous êtes Candidat</a></li>
+            </ul>
+            <div class="flex gap-6">
+                <div class="flex gap-[10px] items-center">
+                    <img src="./img/earth-americas.png" class="w-[16px] h-[16px]" alt="earth">
+                    <h3>EN</h3>
+                </div>
+                <button class="text-[#DA4167] border border-[#DA4167] py-[9px] px-[24px] rounded-full"
+                    data-te-sidenav-toggle-ref data-te-target="#sidenav-7" aria-controls="#sidenav-7"
+                    aria-haspopup="true">
+                    <p>CONTACT
+                    </p>
+                </button>
+            </div>
+
+        </nav>
+    </header>
+    <!-- Sidenav -->
+    <nav id="sidenav-7"
+        class="fixed right-0 top-0 z-[1035] h-screen w-[30vw] translate-x-full overflow-hidden bg-white shadow-[0_4px_12px_0_rgba(0,0,0,0.07),_0_2px_4px_rgba(0,0,0,0.05)] data-[te-sidenav-hidden='false']:-translate-x-0 dark:bg-zinc-800"
+        data-te-sidenav-init data-te-sidenav-hidden="false" data-te-sidenav-right="true">
+        <ul class="relative m-0 list-none px-[0.2rem]" data-te-sidenav-menu-ref>
+            <li class="relative">
+                <a class="flex h-12 cursor-pointer items-center truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-600 outline-none transition duration-300 ease-linear hover:bg-slate-50 hover:text-inherit hover:outline-none focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
+                    data-te-sidenav-link-ref>
+                    <span class="mr-4 [&>svg]:h-4 [&>svg]:w-4 [&>svg]:text-gray-400 dark:[&>svg]:text-gray-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="h-4 w-4">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
+                        </svg>
+                    </span>
+                    <span>Link 1</span>
+                </a>
+            </li>
+            <li class="relative">
+                <a class="flex h-12 cursor-pointer items-center truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-600 outline-none transition duration-300 ease-linear hover:bg-slate-50 hover:text-inherit hover:outline-none focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
+                    data-te-sidenav-link-ref>
+                    <span class="mr-4 [&>svg]:h-4 [&>svg]:w-4 [&>svg]:text-gray-400 dark:[&>svg]:text-gray-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4">
+                            <path fill-rule="evenodd"
+                                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-2.625 6c-.54 0-.828.419-.936.634a1.96 1.96 0 00-.189.866c0 .298.059.605.189.866.108.215.395.634.936.634.54 0 .828-.419.936-.634.13-.26.189-.568.189-.866 0-.298-.059-.605-.189-.866-.108-.215-.395-.634-.936-.634zm4.314.634c.108-.215.395-.634.936-.634.54 0 .828.419.936.634.13.26.189.568.189.866 0 .298-.059.605-.189.866-.108.215-.395.634-.936.634-.54 0-.828-.419-.936-.634a1.96 1.96 0 01-.189-.866c0-.298.059-.605.189-.866zm2.023 6.828a.75.75 0 10-1.06-1.06 3.75 3.75 0 01-5.304 0 .75.75 0 00-1.06 1.06 5.25 5.25 0 007.424 0z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </span>
+                    <span>Category 1</span>
+                    <span
+                        class="absolute right-0 ml-auto mr-[0.8rem] transition-transform duration-300 ease-linear motion-reduce:transition-none [&>svg]:text-gray-600 dark:[&>svg]:text-gray-300"
+                        data-te-sidenav-rotate-icon-ref>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+                            <path fill-rule="evenodd"
+                                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </span>
+                </a>
+                <ul class="!visible relative m-0 hidden list-none p-0 data-[te-collapse-show]:block "
+                    data-te-sidenav-collapse-ref>
+                    <li class="relative">
+                        <a class="flex h-6 cursor-pointer items-center truncate rounded-[5px] py-4 pl-[3.4rem] pr-6 text-[0.78rem] text-gray-600 outline-none transition duration-300 ease-linear hover:bg-slate-50 hover:text-inherit hover:outline-none focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
+                            data-te-sidenav-link-ref>Link 2</a>
+                    </li>
+                    <li class="relative">
+                        <a class="flex h-6 cursor-pointer items-center truncate rounded-[5px] py-4 pl-[3.4rem] pr-6 text-[0.78rem] text-gray-600 outline-none transition duration-300 ease-linear hover:bg-slate-50 hover:text-inherit hover:outline-none focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
+                            data-te-sidenav-link-ref>Link 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="relative">
+                <a class="flex h-12 cursor-pointer items-center truncate rounded-[5px] px-6 py-4 text-[0.875rem] text-gray-600 outline-none transition duration-300 ease-linear hover:bg-slate-50 hover:text-inherit hover:outline-none focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
+                    data-te-sidenav-link-ref>
+                    <span class="mr-4 [&>svg]:h-4 [&>svg]:w-4 [&>svg]:text-gray-400 dark:[&>svg]:text-gray-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4">
+                            <path fill-rule="evenodd"
+                                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-2.625 6c-.54 0-.828.419-.936.634a1.96 1.96 0 00-.189.866c0 .298.059.605.189.866.108.215.395.634.936.634.54 0 .828-.419.936-.634.13-.26.189-.568.189-.866 0-.298-.059-.605-.189-.866-.108-.215-.395-.634-.936-.634zm4.314.634c.108-.215.395-.634.936-.634.54 0 .828.419.936.634.13.26.189.568.189.866 0 .298-.059.605-.189.866-.108.215-.395.634-.936.634-.54 0-.828-.419-.936-.634a1.96 1.96 0 01-.189-.866c0-.298.059-.605.189-.866zm2.023 6.828a.75.75 0 10-1.06-1.06 3.75 3.75 0 01-5.304 0 .75.75 0 00-1.06 1.06 5.25 5.25 0 007.424 0z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </span>
+                    <span>Category 2</span>
+                    <span
+                        class="absolute right-0 ml-auto mr-[0.8rem] transition-transform duration-300 ease-linear motion-reduce:transition-none [&>svg]:text-gray-600 dark:[&>svg]:text-gray-300"
+                        data-te-sidenav-rotate-icon-ref>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+                            <path fill-rule="evenodd"
+                                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </span>
+                </a>
+                <ul class="show !visible relative m-0 hidden list-none p-0 data-[te-collapse-show]:block "
+                    data-te-sidenav-collapse-ref>
+                    <li class="relative">
+                        <a class="flex h-6 cursor-pointer items-center truncate rounded-[5px] py-4 pl-[3.4rem] pr-6 text-[0.78rem] text-gray-600 outline-none transition duration-300 ease-linear hover:bg-slate-50 hover:text-inherit hover:outline-none focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
+                            data-te-sidenav-link-ref>Link 4</a>
+                    </li>
+                    <li class="relative">
+                        <a class="flex h-6 cursor-pointer items-center truncate rounded-[5px] py-4 pl-[3.4rem] pr-6 text-[0.78rem] text-gray-600 outline-none transition duration-300 ease-linear hover:bg-slate-50 hover:text-inherit hover:outline-none focus:bg-slate-50 focus:text-inherit focus:outline-none active:bg-slate-50 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
+                            data-te-sidenav-link-ref>Link 5</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <!-- Sidenav -->
+
+
+
+    <div class="flex justify-center items-center h-[40vh] px-8 lg:px-0 ">
+        <div class=" flex flex-col gap-4 w-full lg:w-[68%]  ">
+            <h2 class="text-6xl text-[#253993] font-extrabold">Vous êtes candidat</h2>
+            <p class="text-[#414040] font-normal text-xl">
+                Enim a facilisi et pharetra sit amet sed amet nunc interdum
+                lorem amet fermentum
+                erat</p>
+        </div>
+    </div>
+    <!-- intro  -->
+    <div class="lg:flex px-8 justify-center lg:gap-[200px] items-center py-10">
+        <div class="lg:w-[500px] w-full flex flex-col gap-3">
+            <h4 class=" text-xs font-semibold leading-6 text-[#1A2867]">Vous êtes à la recherche d'un travail ?</h4>
+            <h2 class=" text-[28px] font-semibold leading-10 text-[#1A2867]">Postulez en quelques clics seulement pour
+                les jobs qui
+                correspondent à vos compétences et
+                disponibilités
+            </h2>
+            <img src="" alt="">
+            <p class="text-[#201E1E] font-normal leading-6">Quisque scelerisque morbi vitae tincidunt venenatis elit sed
+                volutpat. Tincidunt
+                integer nisl quis urna
+                dui eu felis. Tellus facilisis amet porttitor erat lacus varius a eget. Sit mauris ac felis nec vel a
+                arcu diam senectus. Lacus quam aenean turpis metus malesuada. Proin senectus feugiat nunc ultrices purus
+                in. Viverra tempor vestibulum nunc nec.
+                <br>
+                <br>
+                Aliquam eget at malesuada justo enim vitae. Tristique mauris purus gravida libero. Montes massa nisi
+                eget porttitor ante. Sit dictum sit nulla quis pharetra iaculis mauris fermentum sed. Hendrerit lacus
+                maecenas aliquet vel semper odio at pulvinar. Ac semper sed sed purus bibendum ipsum sed ultrices fusce.
+                Eget morbi quam eu hac enim.
+            </p>
+            <div class="flex  items-center text-[#DA4167] gap-4 pt-4">
+                <a href="#" class="font-bold leading-6 text-[16px]">Inscrivez-vous</a>
+                <div class="bg-[url('./img/logo-shape.svg')]">
+                    <img src="./img/angle-right.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="mt-5">
+            <img src="./img/one1.png" alt="">
+        </div>
+    </div>
+    <!-- women  -->
+    <div class="bg-[#F6F6F6] overflow-hidden flex relative justify-center py-10 px-8 lg:h-[50vh]">
+        <div class="flex z-10 flex-col-reverse lg:flex-row  justify-center items-center gap-16">
+            <div>
+                <img class="w-1/2 lg:w-full" class="" src="./img/woman1.png" alt="">
+
+            </div>
+            <div class="flex flex-col gap-10 w-full lg:w-[50%]">
+                <img class="w-16" src="./img/quotes.svg" alt="quotes">
+                <p class=" text-[#201E1E] font-normal leading-7">Je tiens à partager mon expérience positive
+                    avec <span class="text-[#253993]">Amy
+                        Ressources</span>.
+                    Grâce à eux, j'ai eu
+                    la chance de travailler sur plusieurs missions intérimaires passionnantes chez différents clients.
+                    Leur expertise dans le recrutement m'a permis de trouver des missions adaptées à mes compétences et
+                    à mes intérêts.</p>
+
+                <h4 class="font-semibold leading-6 text-[#414040]">
+                    Chloe Campbell <br>
+                    <span class="text-[#6E6D6D] font-normal leading-6 text-[16px]">Réceptionniste en Hôtellerie</span>
+                </h4>
+            </div>
+        </div>
+        <svg class=" absolute right-0 -top-10 z-0 lg:right-0  lg:top-[20%]" xmlns="http://www.w3.org/2000/svg"
+            width="178" height="258" viewBox="0 0 178 258" fill="none">
+            <path d="M218 65.4627L109.965 0L0 65.4627V192.537L109.965 258L218 192.537V65.4627Z" fill="#E9EBF4" />
+        </svg>
+    </div>
+    <!-- gallery  -->
+    <div class="flex items-center px-8 gap-20 py-10 flex-col">
+        <div class="text-[#1A2867] w-full lg:w-[70%] flex flex-col gap-5 h-[20vh] py-10">
+            <h4 class="text-[16px] font-semibold leading-6">Vous êtes à la recherche d'un travail ?</h4>
+            <h2 class="text-[28px] font-semibold leading-10 w-full lg:w-[75%]">Quel que soit votre métier ou vos
+                compétences, nous
+                avons
+                les offres d'emploi qu'il vous faut.</h2>
+            <img src="" alt="-------">
+        </div>
+        <div class="grid grid-cols-2 gap-20  lg:grid-cols-6 lg:gap-[130px] py-8">
+            <div class="relative w-[100px] h-[150px] ">
+                <div class="relative">
+                    <img class=" " src="./img/logo-shape2.svg" alt="">
+                    <img class=" absolute top-[40%] left-[39%] z-10" src="./img/user1.svg" alt="">
+                </div>
+                <p class=" text-[#201E1E] font-normal leading-5 pt-2 absolute -left-[20%] w-[200px] ">Assistants
+                    Administratifs</p>
+            </div>
+            <div class="relative ">
+                <div class="relative">
+                    <img class=" " src="./img/logo-shape2.svg" alt="">
+                    <img class=" absolute top-[40%] left-[39%] z-10" src="./img/gallery/bell-concierge.svg" alt="">
+                </div>
+                <div class="pt-2 absolute -left-[40%] w-[200px] ">
+                    <p class=" text-center text-[#201E1E]  font-normal leading-5 ">
+                        Réceptionniste et Commis de bureau
+                    </p>
+                </div>
+            </div>
+            <div class="relative ">
+                <div class="relative">
+                    <img class=" " src="./img/logo-shape2.svg" alt="">
+                    <img class=" absolute top-[40%] left-[39%] z-10" src="./img/gallery/3.svg" alt="">
+                </div>
+                <p class=" text-[#201E1E] font-normal leading-5 pt-2 absolute -left-[20%] w-[200px] ">
+                    Comptabilité et Finance
+                </p>
+            </div>
+            <div class="relative ">
+                <div class="relative">
+                    <img class=" " src="./img/logo-shape2.svg" alt="">
+                    <img class=" absolute top-[40%] left-[39%] z-10" src="./img/gallery/4.svg" alt="">
+                </div>
+                <p class=" text-[#201E1E] font-normal leading-5 pt-2 absolute -left-[20%] w-[200px] ">
+                    Administration
+                </p>
+            </div>
+            <div class="relative ">
+                <div class="relative">
+                    <img class=" " src="./img/logo-shape2.svg" alt="">
+                    <img class=" absolute top-[40%] left-[39%] z-10" src="./img/gallery/5svg.svg" alt="">
+                </div>
+                <p class=" text-[#201E1E] font-normal leading-5 pt-2 absolute -left-[20%] w-[200px] ">
+                    Centre d’appels
+                </p>
+            </div>
+            <div class="relative ">
+                <div class="relative">
+                    <img class=" " src="./img/logo-shape2.svg" alt="">
+                    <img class=" absolute top-[40%] left-[39%] z-10" src="./img/gallery/6.svg" alt="">
+                </div>
+                <p class=" text-[#201E1E] font-normal leading-5 pt-2 absolute -left-[20%] w-[200px] ">
+                    Service à la clientèle
+                </p>
+            </div>
+            <div class="relative ">
+                <div class="relative">
+                    <img class=" " src="./img/logo-shape2.svg" alt="">
+                    <img class=" absolute top-[40%] left-[39%] z-10" src="./img/gallery/7.svg" alt="">
+                </div>
+                <p class=" text-[#201E1E] font-normal leading-5 pt-2 absolute -left-[20%] w-[200px] ">
+                    Ressources Humaines
+                </p>
+            </div>
+            <div class="relative ">
+                <div class="relative">
+                    <img class=" " src="./img/logo-shape2.svg" alt="">
+                    <img class=" absolute top-[40%] left-[39%] z-10" src="./img/gallery/8svg.svg" alt="">
+                </div>
+                <div class="pt-2 absolute -left-[40%] w-[200px] ">
+                    <p class=" text-center text-[#201E1E] font-normal leading-5 ">
+                        Technologie de l’Information
+                    </p>
+                </div>
+            </div>
+            <div class="relative ">
+                <div class="relative">
+                    <img class=" " src="./img/logo-shape2.svg" alt="">
+                    <img class=" absolute top-[40%] left-[39%] z-10" src="./img/gallery/9.svg" alt="">
+                </div>
+                <div class="pt-2 absolute -left-[40%] w-[200px] ">
+                    <p class=" text-center text-[#201E1E] font-normal leading-5 ">
+                        Ventes et Marketing
+                    </p>
+                </div>
+            </div>
+            <div class="relative ">
+                <div class="relative">
+                    <img class=" " src="./img/logo-shape2.svg" alt="">
+                    <img class=" absolute top-[40%] left-[39%] z-10" src="./img/gallery/10svg.svg" alt="">
+                </div>
+                <div class="pt-2 absolute -left-[40%] w-[200px] ">
+                    <p class=" text-center text-[#201E1E] font-normal leading-5 ">
+                        Secteur Bancaire et Financier
+                    </p>
+                </div>
+            </div>
+            <div class="relative ">
+                <div class="relative">
+                    <img class=" " src="./img/logo-shape2.svg" alt="">
+                    <img class=" absolute top-[40%] left-[39%] z-10" src="./img/gallery/11svg.svg" alt="">
+                </div>
+                <div class="pt-2 absolute -left-[40%] w-[200px] ">
+                    <p class=" text-center text-[#201E1E] font-normal leading-5 ">
+                        Personnel d’événements spéciaux et conférence
+                    </p>
+                </div>
+            </div>
+            <div class="relative ">
+                <div class="relative">
+                    <img class=" " src="./img/logo-shape2.svg" alt="">
+                    <img class=" absolute top-[40%] left-[39%] z-10" src="./img/gallery/12svg.svg" alt="">
+                </div>
+                <div class="pt-2 absolute -left-[40%] w-[200px] ">
+                    <p class=" text-center text-[#201E1E] font-normal leading-5 ">
+                        Remplacement de congé de maternité
+                    </p>
+                </div>
+            </div>
+            <div class="relative ">
+                <div class="relative">
+                    <img class=" " src="./img/logo-shape2.svg" alt="">
+                    <img class=" absolute top-[40%] left-[39%] z-10" src="./img/gallery/13.svg" alt="">
+                </div>
+                <div class="pt-2 absolute -left-[40%] w-[200px] ">
+                    <p class=" text-center text-[#201E1E] font-normal leading-5 ">
+                        Gestion d’inventaire
+                    </p>
+                </div>
+            </div>
+            <div class="relative ">
+                <div class="relative">
+                    <img class=" " src="./img/logo-shape2.svg" alt="">
+                    <img class=" absolute top-[40%] left-[39%] z-10" src="./img/gallery/14svg.svg" alt="">
+                </div>
+                <div class="pt-2 absolute -left-[40%] w-[200px] ">
+                    <p class=" text-center text-[#201E1E] font-normal leading-5 ">
+                        Ingénierie
+                    </p>
+                </div>
+            </div>
+            <div class="relative ">
+                <div class="relative">
+                    <img class=" " src="./img/logo-shape2.svg" alt="">
+                    <img class=" absolute top-[40%] left-[39%] z-10" src="./img/gallery/15.svg" alt="">
+                </div>
+                <div class="pt-2 absolute -left-[40%] w-[200px] ">
+                    <p class=" text-center text-[#201E1E] font-normal leading-5 ">
+                        Entrepôt et Distribution
+                    </p>
+                </div>
+            </div>
+            <div class="relative ">
+                <div class="relative">
+                    <img class=" " src="./img/logo-shape2.svg" alt="">
+                    <img class=" absolute top-[40%] left-[39%] z-10" src="./img/gallery/16svg.svg" alt="">
+                </div>
+                <div class="pt-2 absolute -left-[40%] w-[200px] ">
+                    <p class=" text-center text-[#201E1E] font-normal leading-5 ">
+                        Techniques et métiers
+                    </p>
+                </div>
+            </div>
+            <div class="relative ">
+                <div class="relative">
+                    <img class=" " src="./img/logo-shape2.svg" alt="">
+                    <img class=" absolute top-[40%] left-[39%] z-10" src="./img/gallery/17svg.svg" alt="">
+                </div>
+                <div class="pt-2 absolute -left-[40%] w-[200px] ">
+                    <p class=" text-center text-[#201E1E] font-normal leading-5 ">
+                        Coordination de Shift
+
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- form  -->
+    <div class="flex items-center flex-col py-20 bg-[#253993]">
+        <div class="text-white w-full px-8 lg:w-[70%] flex flex-col gap-5  py-10">
+            <h4 class="text-[16px] font-semibold leading-6">Inscription</h4>
+            <h2 class="text-[28px] font-semibold leading-10 w-[75%]">Inscrivez-vous dès maintenant pour trouver des
+                missions correspondant à vos compétences et à vos disponibilités.</h2>
+            <img src="" alt="-------">
+            <p class="w-[90%]">Après avoir rempli le formulaire d'inscription, l'un de nos opérateurs vous contactera
+                dans les plus
+                brefs délais pour finaliser votre inscription et vous accompagner dans votre recherche de missions
+                intérimaires.</p>
+        </div>
+
+        <form class="text-white w-full md:w-[72%] lg:w-[72%]">
+            <div class="flex flex-wrap">
+                <div class="w-full lg:w-1/3 px-4">
+                    <div class="relative w-full mb-3">
+                        <label class="block capitalize font-bold  leading-6  mb-2" htmlfor="grid-password">
+                            Prénom
+                        </label>
+                        <input type="text"
+                            class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                            value="lucky.jesse">
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/3 px-4">
+                    <div class="relative w-full mb-3">
+                        <label class="block capitalize font-bold  leading-6  mb-2" htmlfor="grid-password">
+                            Nom
+                        </label>
+                        <input type="text"
+                            class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                            value="lucky.jesse">
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/3 px-4">
+                    <label class="block capitalize font-bold  leading-6  mb-2" htmlfor="grid-password">
+
+                        <div class="flex justify-between">
+                            <span class="font-bold leading-6">Vous êtes</span>
+                            <span class=" italic font-normal leading-6 text-[#9B9A9A]">Facultatif</span>
+                        </div>
+                    </label>
+                    <select data-te-select-init class=" relative rounded  px-3 py-3 bg-white text-sm shadow  w-full">
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                    </select>
+                </div>
+
+
+                <div class="w-full lg:w-1/3 px-4">
+                    <div class="relative w-full mb-3">
+                        <label class="block capitalize font-bold  leading-6  mb-2" htmlfor="grid-password">
+                            Adresse email
+                        </label>
+                        <input type="email"
+                            class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                            value="jesse@example.com">
+                    </div>
+                </div>
+
+
+                <div class="w-full lg:w-1/3 px-4">
+                    <div class="relative w-full mb-3">
+                        <label class="block capitalize font-bold  leading-6  mb-2" htmlfor="grid-password">
+                            Numéro de téléphone
+                        </label>
+                        <input type="number"
+                            class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                            value="00000000">
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/3 px-4">
+                    <label class="block capitalize font-bold  leading-6  mb-2" htmlfor="grid-password">
+
+                        <div class="flex justify-between">
+                            <span class="font-bold leading-6">Ville</span>
+                            <span class=" italic font-normal leading-6 text-[#9B9A9A]">Facultatif</span>
+                        </div>
+                    </label>
+                    <select data-te-select-init class=" relative rounded  px-3 py-3 bg-white text-sm shadow  w-full">
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                    </select>
+                </div>
+            </div>
+
+        </form>
+    </div>
+    <!-- questions  -->
+    <div class=" block lg:flex  justify-center gap-[100px] w-full  px-5  items-center py-20">
+        <div class="w-full lg:w-[500px] flex flex-col gap-3">
+            <h4 class=" text-xs font-semibold leading-6 text-[#1A2867]">
+                Questions fréquentes
+            </h4>
+            <h2 class=" text-[28px] font-semibold leading-10 text-[#1A2867]">
+                Voici une liste des questions les plus fréquemment posées par les candidats
+            </h2>
+            <img src="" alt="========">
+            <p class="text-[#201E1E] font-normal leading-6">Quisque scelerisque morbi vitae tincidunt venenatis elit sed
+                Urna pellentesque mauris nunc nec senectus. Dictumst in magna faucibus ultrices quam blandit dictum at
+                amet iaculis integer eleifend habitasse.
+                <br>
+                <br>
+                Amet ac porttitor posuere arcu diam. Aliquet erat sit velit pretium enim praesent quam donec ac.
+                Bibendum sed dui velit fringilla et nibh in nisl. Purus dignissim suspendisse lorem id volutpat massa
+                pharetra. Morbi duis.
+            </p>
+            <div class="flex items-center text-[#DA4167] gap-4 pt-4">
+                <a href="#" class="font-bold leading-6 text-[16px]">Nous contacter</a>
+                <div class="bg-[url('./img/logo-shape.svg')]">
+                    <img src="./img/angle-right.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class=" w-full pt-8 lg:w-[40%]">
+            <div id="accordionExample">
+                <div
+                    class=" rounded-t-lg border border-neutral-200 bg-white dark:border-neutral-600 dark:bg-neutral-800">
+                    <h2 class="mb-0" id="headingOne">
+                        <button
+                            class="group relative flex w-full items-center rounded-t-[15px] border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-[#DA4167] [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+                            type="button" data-te-collapse-init data-te-target="#collapseOne" aria-expanded="true"
+                            aria-controls="collapseOne">
+                            Felis tincidunt quam euismod fermentum ut amet purus vel ?
+                            <span
+                                class="ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                </svg>
+                            </span>
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="!visible" data-te-collapse-item data-te-collapse-show
+                        aria-labelledby="headingOne" data-te-parent="#accordionExample">
+                        <div class="px-5 py-4">
+                            <strong>This is the first item's accordion body.</strong> It is
+                            shown by default, until the collapse plugin adds the appropriate
+                            classes that we use to style each element. These classes control
+                            the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or
+                            overriding our default variables. It's also worth noting that just
+                            about any HTML can go within the <code>.accordion-body</code>,
+                            though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="border border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-neutral-800">
+                    <h2 class="mb-0" id="headingTwo">
+                        <button
+                            class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-[#DA4167] [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+                            type="button" data-te-collapse-init data-te-collapse-collapsed data-te-target="#collapseTwo"
+                            aria-expanded="false" aria-controls="collapseTwo">
+                            At vel lobortis turpis mauris amet pharetra eu sollicitudin ?
+                            <span
+                                class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                </svg>
+                            </span>
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="!visible hidden" data-te-collapse-item aria-labelledby="headingTwo"
+                        data-te-parent="#accordionExample">
+                        <div class="px-5 py-4">
+                            <strong>This is the second item's accordion body.</strong> It is
+                            hidden by default, until the collapse plugin adds the appropriate
+                            classes that we use to style each element. These classes control
+                            the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or
+                            overriding our default variables. It's also worth noting that just
+                            about any HTML can go within the <code>.accordion-body</code>,
+                            though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="rounded-b-lg border border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-neutral-800">
+                    <h2 class="accordion-header mb-0" id="headingThree">
+                        <button
+                            class="group relative flex w-full items-center border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-[#DA4167] [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)] [&[data-te-collapse-collapsed]]:rounded-b-[15px] [&[data-te-collapse-collapsed]]:transition-none"
+                            type="button" data-te-collapse-init data-te-collapse-collapsed
+                            data-te-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Amet ac suscipit ultrices id nec massa pulvinar leo ipsum ?
+                            <span
+                                class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                </svg>
+                            </span>
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="!visible hidden" data-te-collapse-item aria-labelledby="headingThree"
+                        data-te-parent="#accordionExample">
+                        <div class="px-5 py-4">
+                            <strong>This is the third item's accordion body.</strong> It is
+                            hidden by default, until the collapse plugin adds the appropriate
+                            classes that we use to style each element. These classes control
+                            the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or
+                            overriding our default variables. It's also worth noting that just
+                            about any HTML can go within the <code>.accordion-body</code>,
+                            though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="rounded-b-lg border border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-neutral-800">
+                    <h2 class="accordion-header mb-0" id="headingFour">
+                        <button
+                            class="group relative flex w-full items-center border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-[#DA4167] [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)] [&[data-te-collapse-collapsed]]:rounded-b-[15px] [&[data-te-collapse-collapsed]]:transition-none"
+                            type="button" data-te-collapse-init data-te-collapse-collapsed
+                            data-te-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Amet ac suscipit ultrices id nec massa pulvinar leo ipsum ?
+                            <span
+                                class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                                </svg>
+                            </span>
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="!visible hidden" data-te-collapse-item aria-labelledby="headingFour"
+                        data-te-parent="#accordionExample">
+                        <div class="px-5 py-4">
+                            <strong>This is the third item's accordion body.</strong> It is
+                            hidden by default, until the collapse plugin adds the appropriate
+                            classes that we use to style each element. These classes control
+                            the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or
+                            overriding our default variables. It's also worth noting that just
+                            about any HTML can go within the <code>.accordion-body</code>,
+                            though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- footer  -->
+    <footer class="flex flex-col  relative mt-20 h-[40vh] bg-[#F6FBFD]   justify-center  w-full  items-center py-20">
+        <div class="-top-[80px] absolute   flex bg-white items-center  drop-shadow-2xl w-[70%]  rounded-[16px] p-16">
+            <div>
+                <h2 class="text-[#253993] text-[24px] font-semibold leading-9">
+                    Êtes-vous prêt à commencer une collaboration avec nous ?
+                </h2>
+                <p class="font-semibold leading-6 w-[75%]">
+                    Nous serions ravis de discuter avec vous de la façon dont nous pouvons vous aider à atteindre
+                    vos objectifs commerciaux.
+                </p>
+            </div>
+            <div class="flex items-center text-[#DA4167] gap-4 pt-4">
+                <a href="#" class="font-bold leading-6 text-[16px]">Exprimer mon besoin</a>
+                <div class="bg-[url('./img/logo-shape.svg')]">
+                    <img src="./img/angle-right.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="w-[70%] mt-20 ">
+            <div>
+                <div class="flex justify-between ">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="175" height="48" viewBox="0 0 175 48"
+                            fill="none">
+                            <g clip-path="url(#clip0_2889_705)">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M83.8245 8.88965L88.8079 16.4064V21.9936H91.7319V16.4064L96.7153 8.88965H93.2473L90.265 13.7952L87.4576 8.88965H83.8245ZM58.3633 8.89925H60.7822L66.5525 22.0032H63.2593L62.113 19.2288H56.9645L55.857 22.0032H52.6416L58.3633 8.89925ZM59.4805 12.7104L57.8679 16.7808H61.1125L59.4805 12.7104ZM67.8736 8.89925H72.2936L75.3439 17.4432H75.3828L78.4525 8.89925H82.853V22.0032H79.929V11.952H79.8902L76.4125 22.0032H74.1879L70.8365 11.952H70.7976V22.0032H67.8736V8.89925ZM54.0113 25.6704H59.1308C61.8508 25.6704 64.1336 26.592 64.1336 29.6448C64.1336 31.4784 63.1428 32.8992 61.2679 33.2352L64.6388 38.7648H61.1416L58.373 33.5232H56.9353V38.7648H54.0113V25.6704ZM56.9159 31.0944H58.6353C59.7039 31.0944 61.093 31.056 61.093 29.6352C61.093 28.32 59.8982 28.1184 58.8296 28.1184H56.9159V31.0944ZM75.2468 25.6704H66.2416V38.7744H75.5868V36.1056H69.1656V33.4368H74.9165V30.768H69.1656V28.3296H75.2468V25.6704ZM84.485 28.8672C84.0188 28.272 83.0765 27.9936 82.3673 27.9936C81.5416 27.9936 80.405 28.368 80.405 29.3472C80.405 30.3493 81.4771 30.6614 82.7223 31.0239C84.4477 31.5262 86.5056 32.1253 86.5056 34.7904C86.5056 37.7184 84.1256 39.1008 81.3959 39.1008C79.6959 39.1008 78.1902 38.6016 76.937 37.4496L79.0159 35.1936C79.6182 35.9712 80.5896 36.432 81.561 36.432C82.513 36.432 83.5816 35.9904 83.5816 35.0592C83.5816 34.0323 82.4524 33.6784 81.1564 33.2723C79.4115 32.7255 77.3645 32.0841 77.3645 29.5776C77.3645 26.784 79.8222 25.3248 82.4159 25.3248C83.9119 25.3248 85.3593 25.7088 86.4765 26.6976L84.485 28.8672ZM93.1113 27.9936C93.8205 27.9936 94.7628 28.272 95.229 28.8672L97.2205 26.6976C96.1033 25.7088 94.6559 25.3248 93.1599 25.3248C90.5662 25.3248 88.1085 26.784 88.1085 29.5776C88.1085 32.0841 90.1555 32.7255 91.9004 33.2723C93.1964 33.6784 94.3256 34.0323 94.3256 35.0592C94.3256 35.9904 93.257 36.432 92.305 36.432C91.3336 36.432 90.3622 35.9712 89.7599 35.1936L87.681 37.4496C88.9342 38.6016 90.4399 39.1008 92.1399 39.1008C94.8696 39.1008 97.2496 37.7184 97.2496 34.7904C97.2496 32.1253 95.1917 31.5262 93.4663 31.0239C92.2211 30.6614 91.149 30.3493 91.149 29.3472C91.149 28.368 92.2856 27.9936 93.1113 27.9936ZM105.866 25.3344C110.004 25.3344 113.016 28.0129 113.016 32.2177C113.016 36.4225 110.004 39.1009 105.866 39.1009C101.728 39.1009 98.7165 36.4129 98.7165 32.2177C98.7067 28.0225 101.728 25.3344 105.866 25.3344ZM105.866 36.4417C108.353 36.4417 109.985 34.6657 109.985 32.2273C109.985 29.7889 108.353 28.0033 105.866 28.0033C103.379 28.0033 101.747 29.7793 101.747 32.2273C101.747 34.6657 103.37 36.4417 105.866 36.4417ZM120.603 39.1008C124.265 39.1008 126.179 36.8064 126.179 33.7152H126.198V25.6704H123.274V33.6096C123.274 35.2224 122.147 36.4416 120.612 36.4416C119.058 36.4416 117.931 35.2224 117.931 33.6096V25.6704H115.007V33.7152C115.007 36.8064 116.911 39.1008 120.603 39.1008ZM128.87 25.6704H133.999C136.719 25.6704 139.002 26.592 139.002 29.6448C139.002 31.4784 138.011 32.8992 136.136 33.2352L139.507 38.7648H136L133.231 33.5232H131.794V38.7648H128.87V25.6704ZM131.794 31.0944H133.513C134.582 31.0944 135.961 31.056 135.961 29.6352C135.961 28.32 134.766 28.1184 133.698 28.1184H131.784V31.0944H131.794ZM147.171 28.0033C148.25 28.0033 149.095 28.3969 149.678 29.0785L151.941 27.264C150.814 25.8433 148.939 25.344 147.463 25.344C143.324 25.344 140.313 28.0224 140.313 32.2273C140.313 36.4225 143.324 39.1105 147.463 39.1105C149.279 39.1105 151.144 38.3904 152.252 36.8353L149.823 35.0401C149.221 35.9233 148.259 36.4417 147.084 36.4417C144.966 36.4417 143.334 34.6657 143.334 32.2273C143.334 29.7792 144.966 28.0033 147.171 28.0033ZM153.942 25.6704H162.947V28.3296H156.866V30.768H162.617V33.4368H156.866V36.1056H163.287V38.7744H153.942V25.6704ZM170.068 27.9936C170.777 27.9936 171.719 28.272 172.186 28.8672L174.177 26.6976C173.06 25.7088 171.612 25.3248 170.116 25.3248C167.513 25.3248 165.065 26.784 165.065 29.5776C165.065 32.0841 167.112 32.7255 168.857 33.2723C170.153 33.6784 171.282 34.0323 171.282 35.0592C171.282 35.9904 170.214 36.432 169.262 36.432C168.29 36.432 167.319 35.9712 166.716 35.1936L164.638 37.4496C165.891 38.6016 167.396 39.1008 169.096 39.1008C171.826 39.1008 174.206 37.7184 174.206 34.7904C174.206 32.1253 172.148 31.5262 170.423 31.0239C169.178 30.6614 168.106 30.3493 168.106 29.3472C168.106 28.368 169.242 27.9936 170.068 27.9936Z"
+                                    fill="#6E6D6D" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M40.9846 35.808V12.2208L20.6623 0L0 12.5472L0.00971429 35.6448L12.5217 43.1424C18.6017 40.3861 27.3854 37.5636 37.8441 37.5644C37.913 37.5644 37.9819 37.5645 38.0509 37.5648L40.9846 35.808ZM12.8326 43.3248C20.0211 40.6944 28.2977 39.5808 35.3794 39.168L32.0571 41.1552C25.8886 42.4512 20.876 44.4768 17.5051 46.1184L12.8326 43.3248ZM29.5703 42.6528L20.6331 48L17.5149 46.1376C21.1966 44.4864 25.3446 43.3824 29.5703 42.6528ZM27.7246 22.5408L28.0451 22.224C28.4726 21.8016 28.9 21.312 29.3177 20.7456C29.7354 20.1792 30.0657 19.5648 30.3183 18.8928C30.5709 18.2304 30.7263 17.5104 30.7846 16.7424C30.8429 15.9744 30.7263 15.1776 30.4543 14.352C29.9977 12.9792 29.3663 11.9232 28.5406 11.1936C27.7149 10.464 26.8017 9.9744 25.7914 9.7152C24.7811 9.456 23.7029 9.3984 22.5663 9.5328C21.4297 9.6672 20.3126 9.9072 19.2149 10.2624C18.7194 10.416 18.2726 10.5792 17.8743 10.7328C17.816 10.752 17.7674 10.7712 17.7189 10.8L18.6611 13.5936C18.9623 13.4592 19.2537 13.3344 19.5063 13.2384C19.8074 13.1136 20.1474 12.9984 20.5069 12.8832C22.0514 12.384 23.392 12.3552 24.548 12.8064C25.704 13.248 26.5297 14.2368 27.0349 15.7632C27.3069 16.5888 27.3554 17.3472 27.1903 18.048C27.0154 18.7488 26.724 19.392 26.316 19.9776C25.908 20.5632 25.4223 21.0912 24.8686 21.552C24.3149 22.0128 23.7709 22.416 23.2366 22.7424L23.0034 22.8864L23.0423 23.0112L33.9223 31.1904C34.5246 31.0656 35.1074 30.912 35.6903 30.7296C36.4189 30.4992 37.06 30.2496 37.6137 30L27.7246 22.5408ZM19.7589 28.4064H10.9771L9.40343 33.6864L9.35222 33.6934C9.08865 33.7294 8.83261 33.7644 8.568 33.7824C8.28629 33.8016 8.01429 33.8112 7.73257 33.8112C7.43143 33.8112 7.14 33.8016 6.84857 33.7824C6.55714 33.7632 6.29486 33.7248 6.06171 33.6864L13.5903 10.8288C13.872 10.7904 14.1731 10.752 14.4937 10.7328C14.8143 10.7136 15.1446 10.704 15.4943 10.704C15.7954 10.704 16.1063 10.7136 16.4269 10.7328C16.7474 10.752 17.0583 10.7904 17.3594 10.8288L24.8589 33.6864C24.5966 33.7248 24.3149 33.7632 23.9943 33.7824C23.6737 33.8016 23.3629 33.8112 23.0617 33.8112C22.78 33.8112 22.4983 33.8016 22.2069 33.7824C21.9154 33.7632 21.6434 33.7248 21.3909 33.6864L19.7589 28.4064ZM11.8417 25.5744H18.8846L15.3486 13.9104L11.8417 25.5744Z"
+                                    fill="#6E6D6D" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2889_705">
+                                    <rect width="174.857" height="48" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="flex float-right gap-5">
+                        <div class=" relative w-10 ">
+                            <svg class=" hover:text-red-500" xmlns="http://www.w3.org/2000/svg" width="42" height="48"
+                                viewBox="0 0 42 48" fill="none">
+                                <path
+                                    d="M21.1836 0.578007L41.5 12.4658V35.5342L21.1836 47.422L0.5 35.5316V12.4684L21.1836 0.578007Z"
+                                    stroke="#E9EBF4" />
+                            </svg>
+                            <svg class=" absolute top-1/3 left-1/3" xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" viewBox="0 0 16 16" fill="none">
+                                <path
+                                    d="M11.3896 9L11.834 6.10437H9.05559V4.22531C9.05559 3.43313 9.44371 2.66094 10.6881 2.66094H11.9512V0.195625C11.9512 0.195625 10.805 0 9.70902 0C7.4209 0 5.92527 1.38688 5.92527 3.8975V6.10437H3.38184V9H5.92527V16H9.05559V9H11.3896Z"
+                                    fill="#DA4167" />
+                            </svg>
+                        </div>
+                        <div class=" relative w-10 ">
+                            <svg class=" hover:text-red-500" xmlns="http://www.w3.org/2000/svg" width="42" height="48"
+                                viewBox="0 0 42 48" fill="none">
+                                <path
+                                    d="M21.1836 0.578007L41.5 12.4658V35.5342L21.1836 47.422L0.5 35.5316V12.4684L21.1836 0.578007Z"
+                                    stroke="#E9EBF4" />
+                            </svg>
+                            <svg class=" absolute top-1/3 left-1/3" xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" viewBox="0 0 16 16" fill="none">
+                                <path
+                                    d="M14.3553 4.741C14.3655 4.88313 14.3655 5.02529 14.3655 5.16741C14.3655 9.50241 11.066 14.4973 5.03553 14.4973C3.17766 14.4973 1.45178 13.9593 0 13.0253C0.263969 13.0557 0.51775 13.0659 0.791875 13.0659C2.32484 13.0659 3.73603 12.5481 4.86294 11.6649C3.42131 11.6344 2.21319 10.6903 1.79694 9.39075C2 9.42119 2.20303 9.4415 2.41625 9.4415C2.71066 9.4415 3.00509 9.40088 3.27919 9.32985C1.77666 9.02525 0.649719 7.70547 0.649719 6.11157V6.07097C1.08625 6.31463 1.59391 6.46691 2.13194 6.48719C1.24869 5.89835 0.670031 4.89329 0.670031 3.75622C0.670031 3.1471 0.832437 2.58872 1.11672 2.10141C2.73094 4.09125 5.15734 5.39072 7.87812 5.53288C7.82737 5.28922 7.79691 5.03544 7.79691 4.78163C7.79691 2.9745 9.25884 1.50244 11.0761 1.50244C12.0202 1.50244 12.873 1.89838 13.472 2.53797C14.2131 2.39585 14.9238 2.12172 15.5532 1.7461C15.3096 2.50754 14.7918 3.14713 14.1116 3.55319C14.7715 3.48216 15.4111 3.29938 15.9999 3.0456C15.5533 3.69532 14.9949 4.27397 14.3553 4.741Z"
+                                    fill="#DA4167" />
+                            </svg>
+                        </div>
+                        <div class=" relative w-10 ">
+                            <svg class=" hover:text-red-500" xmlns="http://www.w3.org/2000/svg" width="42" height="48"
+                                viewBox="0 0 42 48" fill="none">
+                                <path
+                                    d="M21.1836 0.578007L41.5 12.4658V35.5342L21.1836 47.422L0.5 35.5316V12.4684L21.1836 0.578007Z"
+                                    stroke="#E9EBF4" />
+                            </svg>
+                            <svg class=" absolute top-1/3 left-1/3" xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" viewBox="0 0 16 16" fill="none">
+                                <path
+                                    d="M3.80025 14.0002H0.897754V4.6533H3.80025V14.0002ZM2.34744 3.3783C1.41932 3.3783 0.666504 2.60955 0.666504 1.68143C0.666504 1.23561 0.843602 0.80806 1.15884 0.492823C1.47408 0.177587 1.90163 0.000488281 2.34744 0.000488281C2.79325 0.000488281 3.22081 0.177587 3.53604 0.492823C3.85128 0.80806 4.02838 1.23561 4.02838 1.68143C4.02838 2.60955 3.27525 3.3783 2.34744 3.3783ZM14.6634 14.0002H11.7671V9.45018C11.7671 8.3658 11.7453 6.97518 10.2581 6.97518C8.749 6.97518 8.51775 8.1533 8.51775 9.37205V14.0002H5.61838V4.6533H8.40213V5.9283H8.44275C8.83025 5.19393 9.77682 4.41893 11.189 4.41893C14.1265 4.41893 14.6665 6.3533 14.6665 8.8658V14.0002H14.6634Z"
+                                    fill="#DA4167" />
+
+                            </svg>
+                        </div>
+                        <div class=" relative w-10 ">
+                            <svg class=" hover:text-red-500" xmlns="http://www.w3.org/2000/svg" width="42" height="48"
+                                viewBox="0 0 42 48" fill="none">
+                                <path
+                                    d="M21.1836 0.578007L41.5 12.4658V35.5342L21.1836 47.422L0.5 35.5316V12.4684L21.1836 0.578007Z"
+                                    stroke="#E9EBF4" />
+                            </svg>
+                            <svg class=" absolute top-1/3 left-1/3" xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" viewBox="0 0 16 16" fill="none">
+                                <path
+                                    d="M15.2684 4.11331C15.094 3.45636 14.5799 2.93897 13.9272 2.76339C12.7442 2.44434 8.00023 2.44434 8.00023 2.44434C8.00023 2.44434 3.25634 2.44434 2.07326 2.76339C1.42057 2.939 0.906511 3.45636 0.732039 4.11331C0.415039 5.30406 0.415039 7.78845 0.415039 7.78845C0.415039 7.78845 0.415039 10.2728 0.732039 11.4636C0.906511 12.1205 1.42057 12.6164 2.07326 12.7919C3.25634 13.111 8.00023 13.111 8.00023 13.111C8.00023 13.111 12.7441 13.111 13.9272 12.7919C14.5799 12.6164 15.094 12.1205 15.2684 11.4636C15.5854 10.2728 15.5854 7.78845 15.5854 7.78845C15.5854 7.78845 15.5854 5.30406 15.2684 4.11331ZM6.44871 10.0441V5.53281L10.4137 7.7885L6.44871 10.0441Z"
+                                    fill="#DA4167" />
+
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-6 mt-10 float-left">
+                <p class="text-[#9B9A9A] font-normal leading-6">© Copyright Amy Ressources 2023 - Tous droits réservés
+                </p>
+                <p class="text-[#DA4167]">Mentions légales</p>
+                <p class="text-[#DA4167]">Conditions générales d’utilisation</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script type="text/javascript" src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+
+</body>
+
+</html>
